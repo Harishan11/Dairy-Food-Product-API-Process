@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "453d6f12-72ed-4b56-a9b6-7f051551270c",
+		"name": "ASM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18415250"
+	},
+	"item": [
+		{
+			"name": "user_creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"access_token\": \"a39b72c1b93309004e2428be9e3fb23d5b3791d045d9b42e4d7e9c6956ebb3b1\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"32\",\r\n            \"name\": \"Admins\",\r\n            \"user_id\": \"admins\",\r\n            \"user_pwd\": \"123\",\r\n            \"user_role\": \"Admin\",\r\n            \"user_division\": \"Admin\",\r\n            \"mobile_no\": \"136561\",\r\n            \"address\" : \"dssd\",\r\n            \"aadhar_no\" : \"232656436186\",\r\n            \"pan_no\" : \"65456\",\r\n            \"licenses_no\" : \"46354saf64\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.43.115:90/api/employee_data"
+			},
+			"response": []
+		},
+		{
+			"name": "login_creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tkn\": 35433,\r\n    \"api_key\": \"0088d7c2d68eaf9d33da24ssse4c2bd2b70\",\r\n    \"user_id\": \"5896\",\r\n            \"password\": \"ha123\",\r\n    \"imei_number\": \"1365\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.102:90/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "user_logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 32|yyMRLKaaOs6kDM6SduNCTuaS4f1sqklFXC5UZaxs",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \"api_key\" : \"0088d7c2d68eaf9d33da24e4c2bd2b70\",\r\n       \"access_token\" : \"38|swb9bl0nP0sS3MV3gszbypmCZTSwqRW0SuUq0IhS\",\r\n       \"token\":\"3624348142\",\r\n       \"imei_number\" : \"234323\",\r\n       \"id\"      : \"93\"   \r\n       \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.102:90/api/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "tax_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"access_token\": \"514889f609b4f417c8f58c7d140ccf4cd23393acd845298386342d5d47271ad0\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"tax785\",\r\n            \"igst\": \"100\",\r\n            \"cgst\": \"50\",\r\n            \"sgst\": \"50\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.103:90/api/tax_data"
+			},
+			"response": []
+		},
+		{
+			"name": "vehicle_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8620335748\",\r\n    \"access_token\": \"56e0ef3daff49336c74afa5aeb997d24c2412f071e29832bde7526c3dc209f47\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"vehicle_no\": \"TN78 6876\",\r\n            \"vehicle_name\": \"bike\",\r\n            \"vehicle_insurance_no\": \"67HDH7668\",\r\n            \"vehicle_diesel\": \"DIESEL\",\r\n            \"vehicle_exp_date\": \"2022-05-27\",\r\n            \"vehicle_ins_exp_date\": \"2022-05-27\",\r\n            \"vehicle_fc_exp_date\": \"2022-05-27\",\r\n            \"vehicle_fc_no\": \"Hshs7hshs\",\r\n            \"vehicle_pollution_certificate_no\": \"hsus77e7\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/vehicle_data"
+			},
+			"response": []
+		},
+		{
+			"name": "item_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"access_token\": \"514889f609b4f417c8f58c7d140ccf4cd23393acd845298386342d5d47271ad0\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"4\",\r\n            \"name\": \"item3\",\r\n            \"code\": \"001\",\r\n            \"tax_id\": \"568\",\r\n            \"ratequoter\": \"75\",\r\n            \"ratehalf\": \"50\",\r\n            \"ratehalfquoter\": \"25\",\r\n            \"rate\": \"100\",\r\n            \"image_id\": \"52\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/item_data"
+			},
+			"response": []
+		},
+		{
+			"name": "pricelist_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"1223456\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"3\",\r\n            \"name\": \"whdozed\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.101:90/api/pricelist_data"
+			},
+			"response": []
+		},
+		{
+			"name": "price_list_item_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"1223456\",\r\n    \"access_token\": \"38|swb9bl0nP0sS3MV3gszbypmCZTSwqRW0SuUq0IhS\",\r\n    \"params\": [\r\n        {\r\n            \"created_id\": \"1\",\r\n            \"p_id\": \"101\",\r\n            \"item_id\": \"164\",\r\n            \"rate\": \"330\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.103:90/api/price_list_item_data"
+			},
+			"response": []
+		},
+		{
+			"name": "route_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"access_token\": \"514889f609b4f417c8f58c7d140ccf4cd23393acd845298386342d5d47271ad0\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"no\": \"786\",\r\n            \"route_name\": \"chennai\",\r\n            \"vec_name\": \"car\",\r\n            \"vec_id\": \"900\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.103:90/api/route_data"
+			},
+			"response": []
+		},
+		{
+			"name": "customer_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"0012252785\",\r\n    \"params\": [\r\n        {\r\n            \"created_id\": \"131\",\r\n            \"name\": \"navnsss\",\r\n            \"code\": \"6764\",\r\n            \"address\": \"77,dft Anna Nagar, coimbatore \",\r\n            \"c_person\": \"7788996655\",\r\n            \"mobile_no\": \"8855669933\",\r\n            \"alt_mobile_no\": \"9955663355\",\r\n            \"gst_no\": \"GG67G8\",\r\n            \"pan_no\": \"G677H8\",\r\n            \"user_email\": \"navee@gmail.com\",\r\n            \"location\": \"Coimbatore\",\r\n            \"route_name\": \"sds\",\r\n            \"price_list\": \"322\",\r\n            \"s_executive\": \"asd\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/customer_data"
+			},
+			"response": []
+		},
+		{
+			"name": "company_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"1548310477\",\r\n    \"access_token\": \"514889f609b4f417c8f58c7d140ccf4cd23393acd845298386342d5d47271ad0\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"name\": \"Ice\",\r\n            \"address\": \"gandhipuram \",\r\n            \"pincode\": \"641001\",\r\n            \"fssai_no\": \"gsys628wbsjz\",\r\n            \"gst_no\": \"bzhdbd6w9wj\",\r\n            \"mobile_no\": \"9757873497\",\r\n            \"state\": \"Tamil Nadu\",\r\n            \"country\": \"India\",\r\n            \"bank_name\": \"null\",\r\n            \"acc_no\": \"\",\r\n            \"ifsc\": \"\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/company_data"
+			},
+			"response": []
+		},
+		{
+			"name": "bar_selection_master_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"empty_color\": \"red\",\r\n            \"filled_color\": \"blue\",\r\n            \"underprocess_color\": \"orange\",\r\n            \"selected_color\": \"white\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.103:90/api/bar_selection_data"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMasteStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"0088d7c2d68eaf9d33da24e4c2bd2b70\",\r\n    \"table\": \"tax_master\",\r\n    \"remote_id\": 296,\r\n    \"type\": \"activate\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.101:90/api/UpdateMasterStatus"
+			},
+			"response": []
+		},
+		{
+			"name": "sale_order_entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"4987549849846444564\",\r\n    \"access_token\": \"073c6d4f071ce28a447a9f10c2e9600ab548e9fb9deaf0967152a6cbbb5f84b2\",\r\n    \"params\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"party_id\": \"1\",\r\n            \"party_name\": \"abitha\",\r\n            \"user_id\": \"5\",\r\n            \"tot_qty\": \"5\",\r\n            \"cgst_amt\": \"25\",\r\n            \"sgst_amt\": \"25\",\r\n            \"igst_amt\": \"50\",\r\n            \"del_date\": \"2022-05-22\",\r\n            \"bill_date\" :\"2022-05-22\",\r\n            \"del_location\": \"cbe\",\r\n            \"net_amt\": \"360\",\r\n            \"gross_amt\": \"3700\",\r\n            \"order_type\": \"2\",\r\n            \"order_sub\": [\r\n                {\r\n                    \"id\": \"1\",\r\n                    \"item_name\": \"nagu\",\r\n                    \"item_id\": \"634\",\r\n                    \"item_qty\": \"54\",\r\n                    \"rate\": \"542\",\r\n                    \"tot_amt\": \"500\",\r\n                    \"tax_amt\": \"655\",\r\n                    \"tax_value\": \"54\",\r\n                    \"cgst\": \"50\",\r\n                    \"sgst\": \"50\",\r\n                    \"igst\": \"100\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/sale_order_data"
+			},
+			"response": []
+		},
+		{
+			"name": "sale_order_item_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tkn\" : \"dsfgs456\",\r\n      \"params\": [\r\n        {\r\n            \"item_name\": \"harish\",\r\n            \"item_id\": \"54\",\r\n            \"item_qty\": \"5324\",\r\n            \"order_id\": \"536\",\r\n            \"rate\": \"543\",\r\n            \"tot_amt\": \"13331\",\r\n            \"tax_amt\": \"5323\",\r\n            \"tax_value\": \"53464\",\r\n            \"cgst\": \"sdfh\",\r\n            \"sgst\": \"894\",\r\n            \"igst\": \"5364\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/sale_order_item_data"
+			},
+			"response": []
+		},
+		{
+			"name": "price_list_master_group",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/push_data_entry"
+			},
+			"response": []
+		},
+		{
+			"name": "push_data_entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"1223456\",\r\n    \"accesstoken\": \"e057a5828fb68cb0faaa46725f9204abdbbf1f1c\",\r\n    \"params\": [\r\n        {\r\n            \"party_id\": \"450\",\r\n            \"party_name\": \"yazarp\",\r\n            \"user_id\": \"5\",\r\n            \"tot_qty\": \"500\",\r\n            \"cgst_amt\": \"1000\",\r\n            \"sgst_amt\": \"500\",\r\n            \"igst_amt\": \"500\",\r\n            \"del_date\": \"25-03-2019\",\r\n            \"del_location\": \"coimbatore\",\r\n            \"net_amt\": \"3600\",\r\n            \"gross_amt\": \"3600\",\r\n            \"order_type\": \"all\",\r\n            \"sale_order_item_sub\": [\r\n                {\r\n                    \"item_name\": \"yazarp\",\r\n                    \"item_id\": \"634\",\r\n                    \"item_qty\": \"54\",\r\n                    \"rate\": \"542\",\r\n                    \"tot_amt\": \"5000\",\r\n                    \"tax_amt\": \"654\",\r\n                    \"tax_value\": \"542\",\r\n                    \"cgst\": \"1000\",\r\n                    \"sgst\": \"500\",\r\n                    \"igst\": \"500\"\r\n                },\r\n                {\r\n                    \"item_name\": \"yazarp\",\r\n                    \"item_id\": \"12\",\r\n                    \"item_qty\": \"3\",\r\n                    \"rate\": \"1000\",\r\n                    \"tot_amt\": \"200\",\r\n                    \"tax_amt\": \"200\",\r\n                    \"tax_value\": \"200\",\r\n                    \"cgst\": \"400\",\r\n                    \"sgst\": \"200\",\r\n                    \"igst\": \"200\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/push_data_entry"
+			},
+			"response": []
+		},
+		{
+			"name": "push_master_bulk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accesstoken\": \"e057a5828fb68cb0faaa46725f9204abdbbf1f1c\",\r\n    \"tax_master\": [\r\n        {\r\n            \"name\": \"Haridd\",\r\n            \"cgst\": \"500\",\r\n            \"sgst\": \"50\",\r\n            \"igst\": \"50\",\r\n            \"created_id\": \"500\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/push_master_bulk"
+			},
+			"response": []
+		},
+		{
+			"name": "push_master",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 24|2aMAyDsZKPUIGKg4TPyBTbjFtnscoi7ykIkYRtWr",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"access_token\": \"514889f609b4f417c8f58c7d140ccf4cd23393acd845298386342d5d47271ad0\",\r\n    \"api_key\": \"0088d7c2d68eaf9d33da24e4c2bd2b70\",\r\n    \"table\": \"route_master\",\r\n    \"last_up_time\": \"2022-05-10 13:49:47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/push_master"
+			},
+			"response": []
+		},
+		{
+			"name": "push_entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"access_token\": \"08c30ace263a5bd2e896956bbc4ff077584b335f613bad8fbeab115fdb3b48db\",\r\n    \"api_key\": \"0088d7c2d68eaf9d33da24e4c2bd2b70\",\r\n    \"table\": \"sale_order\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://192.168.0.104:90/api/push_data_entry"
+			},
+			"response": []
+		}
+	]
+}
